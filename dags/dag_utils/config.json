@@ -1,0 +1,24 @@
+{
+  "weatherstack": {
+    "access_key": "1a0c2f3b4e1d4f8a9c5e6f7e8d9a0b1", # replace with your actual access key
+    "cities": [
+      {
+        "name": "London"
+      },
+      {
+        "name": "Diyarbakir"
+      },
+      {
+        "name" : "Paris"
+      }
+    ]
+  },
+  "postgres": {
+    "host": "host.docker.internal", # replace with your actual host
+    "dbname": "istanbul", #replace with your actual database name
+    "username": "postgres", #replace with your actual username
+    "password": "password123", # replace with your actual password
+    "weather_create_query": "CREATE TABLE IF NOT EXISTS weather ( name VARCHAR NOT NULL, region VARCHAR,    country VARCHAR,lat DECIMAL(9, 6),long DECIMAL(9, 6), timezone VARCHAR,local_time TIMESTAMP, temp_c DECIMAL(5, 2),feelslike_c DECIMAL(5, 2),condition VARCHAR,condition_icon VARCHAR,wind_kph DECIMAL(6, 2),    pressure_mb DECIMAL(6, 2),    precipitation_mm DECIMAL(6, 2),    humidity DECIMAL(5, 2),    cloud DECIMAL(5, 2),    uv_index SMALLINT,    visibility_km DECIMAL(6, 2),    last_updated_epoch BIGINT,created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);",
+    "weather_insert_query": "INSERT INTO weather ( name, region, country, lat, long, timezone, local_time,   temp_c, feelslike_c, condition, condition_icon, wind_kph,    pressure_mb, precipitation_mm, humidity, cloud,   uv_index, visibility_km, last_updated_epoch) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);"
+  }
+}

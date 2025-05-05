@@ -1,0 +1,15 @@
+{"timestamp":"2025-05-04T18:59:17.942997","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-04T18:59:17.943598","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/weatherstack_etl_v2.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-04T18:59:18.027300Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:59:18.027772Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:59:18.027969Z","level":"info","event":"Current task name:load_weather_to_postgres","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:59:18.028097Z","level":"info","event":"Dag name:weatherstack_etl_v2","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:59:18.028238Z","level":"info","event":"Connection Established","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:59:18.031691Z","level":"info","event":"Query Executed!","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:59:18.035163Z","level":"info","event":"Bulk insert failed: numeric field overflow","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:59:18.036758Z","level":"info","event":"DETAIL:  A field with precision 5, scale 2 must round to an absolute value less than 10^3.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:59:18.036970Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:59:18.037147Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:59:18.037280Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:59:18.037408Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): load_weather_to_postgres>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:59:18.036061","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}

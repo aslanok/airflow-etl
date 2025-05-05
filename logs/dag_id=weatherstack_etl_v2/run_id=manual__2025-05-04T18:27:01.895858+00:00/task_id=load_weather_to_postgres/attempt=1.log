@@ -1,0 +1,11 @@
+{"timestamp":"2025-05-04T18:27:06.081081","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-04T18:27:06.081521","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/weatherstack_etl_v2.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-04T18:27:06.147619Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:27:06.148069Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:27:06.148303Z","level":"info","event":"Current task name:load_weather_to_postgres","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:27:06.148759Z","level":"info","event":"Dag name:weatherstack_etl_v2","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:27:06.148954Z","level":"info","event":"No data to insert.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:27:06.149076Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:27:06.149179Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:27:06.149300Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): load_weather_to_postgres>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:27:06.115823","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}

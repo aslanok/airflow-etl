@@ -1,0 +1,13 @@
+{"timestamp":"2025-05-04T18:27:04.549134","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-04T18:27:04.549903","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/weatherstack_etl_v2.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-04T18:27:04.618623Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:27:04.618813Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:27:04.618909Z","level":"info","event":"Current task name:extract_weather","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:27:04.618993Z","level":"info","event":"Dag name:weatherstack_etl_v2","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:27:04.999040Z","level":"info","event":"API error for New York: None","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:27:05.341609Z","level":"info","event":"API error for London: None","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:27:05.341712","level":"info","event":"Done. Returned value was: []","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}
+{"timestamp":"2025-05-04T18:27:05.342053","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01969c8d-34b2-7de0-a74d-a924019f3e30'), task_id='extract_weather', dag_id='weatherstack_etl_v2', run_id='manual__2025-05-04T18:27:01.895858+00:00', try_number=1, map_index=-1, hostname='2ece5db98347', context_carrier={}, task=<Task(_PythonDecoratedOperator): extract_weather>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=1, start_date=datetime.datetime(2025, 5, 4, 18, 27, 2, 972254, tzinfo=TzInfo(UTC)), end_date=None, is_mapped=False)","logger":"task"}
+{"timestamp":"2025-05-04T18:27:05.366101Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:27:05.366278Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:27:05.366404Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): extract_weather>","chan":"stdout","logger":"task"}

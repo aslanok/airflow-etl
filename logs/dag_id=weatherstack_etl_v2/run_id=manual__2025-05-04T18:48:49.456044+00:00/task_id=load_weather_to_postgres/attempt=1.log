@@ -1,0 +1,20 @@
+{"timestamp":"2025-05-04T18:49:03.464318","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-04T18:49:03.464656","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/weatherstack_etl_v2.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-04T18:49:03.502901Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:49:03.503063Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:49:03.503152Z","level":"info","event":"Current task name:load_weather_to_postgres","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:49:03.503228Z","level":"info","event":"Dag name:weatherstack_etl_v2","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:49:03.506142Z","level":"info","event":"Connection Established","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:49:03.508867Z","level":"info","event":"None","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:49:03.509022Z","level":"info","event":"syntax error at or near \"\\\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:49:03.509254Z","level":"info","event":"LINE 1: CREATE TABLE IF NOT EXISTS weather (\\n    name VARCHAR NOT N...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:49:03.510608Z","level":"info","event":"                                            ^","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:49:03.510743Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:49:03.510900Z","level":"info","event":"Bulk insert failed: syntax error at or near \"\\\"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:49:03.511012Z","level":"info","event":"LINE 1: INSERT INTO weather (\\n    name, region, country, lat, long,...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:49:03.511119Z","level":"info","event":"                             ^","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:49:03.511233Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:49:03.511339Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:49:03.511443Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:49:03.511556Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): load_weather_to_postgres>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T18:49:03.510048","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}
