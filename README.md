@@ -39,6 +39,8 @@ curl -LfO 'https://airflow.apache.org/docs/apache-airflow/3.0.0/docker-compose.y
 
 - Replace placeholder values with your actual credentials.
 
+- You can configure the config.json file to specify which cities' weather data should be fetched and loaded into PostgreSQL.
+
 ### 5. Initialize & Start Airflow
 Initialize the database & create default users:
    ```bash
@@ -65,3 +67,10 @@ Log in using the default credentials (unless overridden):
 Drop your DAG files into dags/.
 
 Customize your ETL logic to fetch from Weatherstack’s API and load into Postgres. 
+
+🐘 PostgreSQL Output Preview
+Here’s a snapshot of the data loaded into PostgreSQL:
+
+<img width="1143" alt="Screenshot 2025-05-05 at 22 23 19" src="https://github.com/user-attachments/assets/1de0a28c-9dd6-45b9-84e9-919b55ebae39" />
+
+
