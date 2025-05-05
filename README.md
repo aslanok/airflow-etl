@@ -24,8 +24,10 @@ Create and enter a new project folder:
 curl -LfO 'https://airflow.apache.org/docs/apache-airflow/3.0.0/docker-compose.yaml'
 
 ### 3. Create Required Directories & Environment File \
-mkdir -p ./dags ./logs ./plugins ./config \
-echo -e "AIRFLOW_UID=$(id -u)" > .env \
+   ```bash
+    mkdir -p ./dags ./logs ./plugins ./config \
+    echo -e "AIRFLOW_UID=$(id -u)" > .env \
+   ```
 
 - **dags/**: your DAG definitions
 - **logs/**: Airflow task logs
@@ -38,20 +40,28 @@ echo -e "AIRFLOW_UID=$(id -u)" > .env \
 - Replace placeholder values with your actual credentials.
 
 ### 5. Initialize & Start Airflow
-- Initialize the database & create default users:
+Initialize the database & create default users:
+   ```bash
+    docker compose up airflow-init 
+   ```
 
-docker compose up airflow-init \
+Start all services:
+   ```bash
+    docker compose up
+   ```
 
-Start all services: \
-docker compose up
+
 
 ### 6. Verify & Access
 Airflow Web UI: http://localhost:8080
 
+Log in using the default credentials (unless overridden):
+   ```bash
+    Username: airflow
+    Password: airflow
+   ```
+
 ### 7. Next Steps
-Drop your DAG files into dags/. \
+Drop your DAG files into dags/.
 
-Customize your ETL logic to fetch from Weatherstack’s API and load into Postgres. \
-
-
-
+Customize your ETL logic to fetch from Weatherstack’s API and load into Postgres. 
